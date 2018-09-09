@@ -1,11 +1,12 @@
 ---
 title: Web
-layout: page
 permalink: "/web/"
+layout: page
 pagination:
   enabled: false
   collection: web
 ---
+
 I primarily build WordPress themes that are sold on Themeforest, but if you need a custom build I do that too. I specalise in building sites for musicians but also cater any style of site. I work with companies daily at <a href="https://xtensive.co.uk" target="_blank">Xtensive</a>, building sites under WordPress, Joomla and e-commerce platform 'BigCommerce'. You can check out my past work or email <a href="mailto:scott@enkota.com?Subject=Hello" target="_top">scott@enkota.com</a>
 
 <h4 class="work-title">RECENT WORK</h4>
