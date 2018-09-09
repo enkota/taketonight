@@ -51,7 +51,6 @@ PLATFORMS
 DEPENDENCIES
   jekyll (= 3.4.0)
   jekyll-feed
-  jekyll-paginate-v2
   jekyll-seo-tag
   jekyll-sitemap
   tzinfo-data
