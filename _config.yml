@@ -5,46 +5,19 @@ collections:
   posts:
     title: Posts
     output: true
+  projects:
+    title: Projects
+    output: false
   uploads:
     title: Uploads
     output: true
-  webg:
-    title: Webg
-    output: false
-defaults:
-- scope:
-    path: ''
-  values:
-    image: "/assets/img/default-card.jpg"
-email: contact@taketonight.com
-description: Rock band from Glasgow, Scotland.
-logo: "/assets/img/logo.png"
-url: https://taketonight.com
-baseurl: 
-favicon: "/assets/img/apple-touch-icon.png"
-twitter:
-  username: taketonightband
-facebook:
-  publisher: https://www.facebook.com/taketonight
-social:
-  links:
-  - https://www.facebook.com/taketonight
-  - https://twitter.com/taketonightband
-  - https://www.youtube.com/c/taketonightofficial
-blog_name: Take Tonight News
-blog_description: Stay informed with the latest news happening at Take Tonight.
-permalink: pretty
+email: scott@enkota.com
+description: Rock band from Glasgow, Scotland
+baseurl: ''
+url: ''
+twitter_username: taketonightband
 markdown: kramdown
-exclude:
-- node_modules
-- gulpfile.js
-- vendor
-- Gemfile
-- Gemfile.lock
-- package.json
-- "-README.md"
-gems:
+theme: minima
+plugins:
+- jekyll-feed
 - jekyll-seo-tag
-sass:
-  sass_dir: _sass
-  style: compressed

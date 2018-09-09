@@ -1,0 +1,27 @@
+---
+title: Projects
+layout: projects
+subtitle: Recent Clients I've Worked With
+heroImg: "/assets/img/bg-1.jpg"
+---
+
+<section class="project-grid">
+    <div class="row">
+      {% for project in site.projects %}
+        <div class="col-sm-6 col-md-4 mb-4">
+          <div class="project-card">
+            <a href="{{ project.link }}" target="_blank"><div class="mb-3">
+                <img class="img-fluid" src="{{ project.image }}" />
+              </div>
+              <div class="project-meta">
+                <h5>{{ project.title }}</h5>
+                <p>
+                  {{ project.type }} {% if project.xtensive == 1 %}(Xtensive){% endif %} - {{ project.industry }}
+                </p>
+              </div>
+              </a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+</section>

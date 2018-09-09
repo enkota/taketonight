@@ -1,0 +1,26 @@
+.site-header{
+  background: #000;
+  padding: 20px 15px;
+  img{
+    max-width: 230px
+  }
+}
+
+#menu-pages{
+  li{
+    padding: 0 10px
+  }
+}
+
+.footer-clients{
+  img{
+    max-height: 50px
+  }
+  @media (max-width: 767.98px) {
+    text-align: center;
+    img{
+      text-align: center;
+      margin-bottom: 1.5rem
+    }
+  };
+}

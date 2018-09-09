@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+		{% include head.html %}
+	<body>
+		{% include header.html %}
+		<section class="hero-page" style="background-image:url('{{ page.heroImg }}')">
+		  <div class="container text-center">
+		    <div class="hero-content-inner">
+		      <h1>{{ page.title }}</h1>
+		      <p>
+		        {{ page.subtitle }}
+		      </p>
+
+		    </div>
+		  </div>
+		</section>
+		<section class="content-page pt-3 pt-sm-5 pb-5">
+			<div class="container">
+				{{content}}
+			</div>
+		</section>
+	 {% include footer.html %}
+	</body>
+</html>

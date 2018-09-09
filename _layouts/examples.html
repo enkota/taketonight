@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+		{% include head.html %}
+	<body>
+		{% include header.html %}
+		<section class="hero-page" style="background-image:url('{{ page.heroImg }}')">
+		  <div class="container text-center">
+		    <div class="hero-content-inner">
+		      <h1>{{ page.title }}</h1>
+		      <p>
+		        {{ page.subtitle }}
+		      </p>
+
+		    </div>
+		  </div>
+		</section>
+		<section class="content-page pt-5 pb-5">
+			<div class="container">
+				<div class="ab-player" data-track-a="/assets/audio/song2" data-track-b="/assets/audio/sample_1_b" data-formats="mp3, ogg">
+					<button class="ab-player-button-a">A</button>
+					<button class="ab-player-button-b">B</button>
+				</div>
+				<div class="ab-player" data-track-a="/assets/audio/sample_2_a" data-track-b="/assets/audio/sample_2_b" data-formats="mp3, ogg">
+					<button class="ab-player-button-a">A</button>
+					<button class="ab-player-button-b">B</button>
+				</div>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/1.1.29/howler.min.js"></script>
+		    <script src="/assets/js/ab-player.js"></script>
+				{{content}}
+			</div>
+		</section>
+	 {% include footer.html %}
+	</body>
+</html>

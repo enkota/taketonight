@@ -1,0 +1,48 @@
+<form id="form" action="https://formspree.io/hello@scottrramsay.com"
+      method="POST">
+  <div class="row justify-content-center align-items-center">
+    <div class="col-sm-12 col-md-7">
+      <h3 class="mb-2 text-center">{{ page.formtitle }}</h3>
+      <p class="text-center mb-4">
+        Fill out the form below to enquire about a new WordPress website or mockup designs.
+      </p>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Your Name</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Full Name" name="Full Name">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email Address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="hello@scottrramsay.com" name="_replyto">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Service</label>
+      <select class="form-control form-control-md" name="Service">
+        <option>WordPress Website</option>
+        <option>Website Mockup</option>
+        <option>Mobile Mockup</option>
+        <option>Other</option>
+      </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Link To Your Current Website</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="https://scottrramsay.com" name="Current Site">
+    <small id="emailHelp" class="form-text text-muted">If you are looking for a site refresh, please let me know what platform you are currently on in the additional info area. You can also email me at <a href="mailto:hello@scottrramsay.com?subject=Website Enquiry Work">hello@scottrramsay.com</a></small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Budget</label>
+      <select class="form-control form-control-md" name="Budget">
+        <option>£500 - 1000</option>
+        <option>£1000 - 1500</option>
+        <option>£1500 - 3000</option>
+        <option>£3000+</option>
+      </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Additional Info</label>
+    <textarea type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Anything else you would like me to know?" name="Additional Info"></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary" value="Send">Submit</button>
+</form>
