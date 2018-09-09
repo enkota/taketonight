@@ -1,0 +1,25 @@
+{
+  "name": "thegamedeals",
+  "version": "1.0.0",
+  "description": "The Game Deals",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/Enkota/enkota.gitlab.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/Enkota/enkota.gitlab.io/issues"
+  },
+  "homepage": "https://gitlab.com/Enkota/enkota.gitlab.io#README",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.6.3",
+    "lodash": "^4.17.4"
+  }
+}

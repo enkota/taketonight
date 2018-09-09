@@ -1,0 +1,417 @@
+//Globals
+
+html,body{
+  -moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
+}
+
+body{
+  -webkit-user-select: red;
+-webkit-user-drag: red;
+animation: 0.5s fadein;
+color:$font-body;
+background:#000
+}
+
+.page-content{
+background: url("/assets/img/tt-bg.jpg");
+background-size: cover;
+height: 100vh
+}
+
+.container{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+//Header
+
+.site-header{
+  background: $header-bg;
+}
+
+a{
+  color: $highlight-purple
+}
+
+a:hover{
+  color: #fff
+}
+
+//Buttons
+
+button{
+  background: $highlight-purple;
+  border-color: $highlight-purple;
+  border-radius: 0;
+}
+
+//Logo
+
+.logo{
+  display: flex;
+align-items: center;
+padding: 20px;
+padding-left: 10px
+}
+
+.site-name{
+  padding-left: 20px
+}
+
+.site-name a{
+  color: $font-head
+}
+
+//Work
+
+.work-img:before{
+content: '';
+height: 10px;
+width: 100%;
+background: #333;
+border-top-left-radius: 3px;
+border-top-right-radius: 3px;
+display: block;
+padding: 10px;
+}
+
+.work-img{
+  margin-bottom:40px;
+  position: relative
+}
+
+.work-img:after{
+display: block;
+position: absolute;
+content: '';
+top: 9px;
+left: 15px;
+width: 3px;
+height: 3px;
+border-radius: 50%;
+background-color: rgba(255, 255, 255, 0.33);
+box-shadow: 0 0 0 2px #fff, 15px 0 0 2px rgba(255, 255, 255, 0.28), 30px 0 0 2px rgba(255, 255, 255, 0.28);
+}
+
+//Navigation
+
+.site-navigation a{
+  padding: 0 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 15px;
+  color: $font-head
+}
+
+.site-navigation li{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  border-bottom: 2px solid transparent
+}
+
+.site-navigation{
+  display: none
+}
+
+.site-navigation li ul{
+  display: none
+}
+
+.site-navigation li:hover > ul{
+  display: block
+}
+
+.site-navigation li ul{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  padding: 20px 0;
+  padding-top: 32px;
+  z-index: 999;
+  min-width: 200px;
+}
+
+.site-navigation li ul li{
+  display: block;
+background: #333;
+padding: 20px 0
+}
+
+.site-navigation .current{
+  border-bottom: 2px solid $highlight-purple;
+  transition: 0.3s ease all
+}
+
+.site-navigation li:hover{
+  border-bottom: 2px solid $highlight-purple;
+}
+
+//Mobile Nav
+
+.button_container {
+  float: right;
+  margin-top: 0px;
+  margin-left: 20px;
+  height: 30px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 999999;
+  -webkit-transition: opacity .25s ease;
+  transition: opacity .25s ease;
+  display: inline-block;
+  right: 15px;
+  position: absolute;
+  top: 45px;
+}
+
+.button_container:hover {
+    opacity: .7
+}
+
+.button_container.active
+.top {
+    -webkit-transform: translateY(11px) rotate(45deg);
+    transform: translateY(11px) rotate(45deg);
+    background: #FFF
+}
+
+.button_container.active
+.middle {
+    opacity: 0;
+    background: #FFF
+}
+
+.button_container.active
+.bottom {
+    -webkit-transform: translateY(-11px) rotate(-45deg);
+    transform: translateY(-11px) rotate(-45deg);
+    background: #FFF
+}
+
+.button_container
+span {
+    background: #fff;
+    border: none;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all .35s ease;
+    transition: all .35s ease;
+    cursor: pointer
+}
+
+.button_container span:nth-of-type(2) {
+    top: 11px
+}
+
+.button_container span:nth-of-type(3) {
+    top: 22px
+}
+
+
+//Overlay Menu
+
+.overlay {
+  background: $header-bg;
+  visibility: hidden;
+  bottom: 0;
+  color: #fff;
+  display: block;
+  left: 0;
+  opacity: 0;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  transition: opacity .15s, visibility .15s;
+  -webkit-transition: opacity .15s, visibility .15s;
+  transition: opacity 0.15s, visibility 0.15s
+}
+
+.overlay.open {
+    opacity: 1;
+    visibility: visible;
+    height: 100%
+}
+
+.overlay .overlay-menu{
+  opacity: 0;
+  display: none;
+}
+
+.overlay.open .overlay-menu{
+  opacity: 1;
+  display: block
+}
+
+.overlay.open
+li {
+  opacity: 1;
+  display: block;
+  text-align: center;
+  padding: 15px 0;
+  margin: 0
+}
+
+.overlay.open li
+a {
+  padding: 20px;
+  border-bottom: 1px solid #333;
+  text-decoration: none
+}
+
+.overlay.open li:last-child
+a {
+    border-bottom: 0
+}
+
+
+
+.overlay
+nav {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    transition: all 300ms;
+    -webkit-transition-delay: 100ms;
+    -moz-transition-delay: 100ms;
+    transition-delay: 100ms
+}
+
+.overlay
+ul {
+margin: 0
+}
+
+.overlay.open ul
+li {
+margin-top: 20px
+}
+
+.overlay.open ul li
+a {
+  padding: 0;
+  opacity: 0.6;
+  transition: 0.3s ease all
+}
+
+.overlay.open ul li
+a:hover {
+  opacity: 1
+}
+
+//Homepage
+
+.home-hero{
+  background:$body-bg-1
+}
+
+.home-hero h2, .work-title{
+  font-weight: 500;
+font-size: 17px;
+letter-spacing: 0.5px;
+color: rgba(255, 255, 255, 0.25)
+}
+
+.work-title{
+  margin-bottom:40px;
+  margin-top:60px
+}
+
+.home-hero-content{
+  padding: 10vh 0
+}
+
+//Footer 
+
+.site-footer{
+  padding: 20px 0
+}
+
+//Pagination
+
+.paginate li{
+  display: inline-block;
+padding: 10px 20px;
+background: $footer-bg;
+margin-right: 10px
+}
+
+.paginate a{
+  color: $highlight-purple
+}
+
+.paginate a:hover{
+  color: #fff
+}
+//Mobile
+
+@media (min-width:62em) {
+  .site-navigation{
+    padding: 0;
+    margin: 0;
+    display: block
+  }
+  .button_container{
+    display: none
+  }
+}
+
+@media (max-width:991px) {
+  .work-info{
+    margin-bottom:60px
+  }
+  .work-img{
+    margin-bottom:10px
+  }
+  .audio-img{
+    margin-bottom:20px
+  }
+  .article-body{
+    padding: 0
+  }
+  .post-card{
+    margin-bottom: 15px
+  }
+  .right,.site-footer{
+    text-align: left
+  }
+  .copyright{
+    padding: 10px;
+padding-bottom: 30px;
+text-align: left
+  }
+  .site-header{
+    padding: 0 15px
+  }
+  html,body{
+    overflow: visible;
+  }
+  .page-body{
+    overflow: visible;
+    height: 100%
+  }
+  .footer-desktop{
+    display: none
+  }
+}
