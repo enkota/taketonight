@@ -41,12 +41,10 @@ exclude:
 - vendor
 - Gemfile
 - Gemfile.lock
-- gulpfile.js
 - package.json
 - "-README.md"
 gems:
 - jekyll-seo-tag
-- jekyll-sitemap
 sass:
   sass_dir: _sass
   style: compressed
