@@ -20,7 +20,7 @@ email: contact@taketonight.com
 description: Rock band from Glasgow, Scotland
 logo: "/assets/img/logo.png"
 url: https://taketonight.com
-baseurl: ''
+baseurl: 
 favicon: "/assets/img/apple-touch-icon.png"
 twitter:
   username: taketonightband
@@ -61,8 +61,8 @@ pagination:
   sort_field: date
   sort_reverse: true
   category: posts
-  tag: ''
-  locale: ''
+  tag: 
+  locale: 
   trail:
     before: 2
     after: 2
