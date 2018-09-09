@@ -1,0 +1,76 @@
+//Colours
+
+$header-bg:#14171c;
+$highlight-purple:#17C2AA;
+$highlight-purple-sidebar:#17C2AA;
+$sidebar-bg:#1B1E2F;
+$body-bg-1:#14171c;
+$body-bg-2:#1E243C;
+$border:#1B1E2F;
+$tag-green:#66D03F;
+$font-head:#fff;
+$font-body:#fff;
+$font-sub:rgba(255, 255, 255, 0.4);
+$font-form:#333;
+$form-bg:#2B324E;
+$form-border:#1B1E2F;
+$scroll:#17C2AA;
+$footer-bg:#000;
+//Font
+
+@font-face {
+    font-family: 'enkota';
+    src:  url('../assets/fonts/regular.woff') format('woff');
+    font-weight: 500
+}
+
+html,body{
+  font-family: 'enkota';
+}
+p{
+font-size: 20px;
+font-weight: 400
+}
+
+.btn-solid{
+  background: none;
+margin: 0;
+padding: 20px 30px;
+line-height: 0;
+border: 2px solid #fff;
+font-size: 14px;
+font-family: Enkota;
+border-radius: 50px;
+transition: 0.3s ease all
+}
+
+.btn-solid:hover{
+  background:#fff;
+  color:#333;
+  border-color: #fff
+}
+
+.btn-spotify{
+  background: #1db954;
+  border-color: #1db954
+}
+
+.home,.home .row,.wrapper{
+  height: 100%
+}
+
+.home{
+  padding:5vw!important
+}
+
+.logo a{
+    line-height:0;
+    margin:0;
+    padding:0;
+}
+
+@media(max-width:767px){
+  .page-content{
+    background-position-x: 100%!important;
+  }
+}
