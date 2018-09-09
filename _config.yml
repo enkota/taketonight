@@ -17,7 +17,7 @@ defaults:
   values:
     image: "/assets/img/default-card.jpg"
 email: contact@taketonight.com
-description: Rock band from Glasgow, Scotland
+description: Rock band from Glasgow, Scotland.
 logo: "/assets/img/logo.png"
 url: https://taketonight.com
 baseurl: 
