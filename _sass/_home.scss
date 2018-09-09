@@ -1,0 +1,232 @@
+@font-face {
+    font-family: SC;
+    src: url("/assets/fonts/sc_bold.otf") format("opentype");
+    font-weight: 800
+}
+
+@font-face {
+    font-family: SC;
+    src: url("/assets/fonts/sc_medium.otf") format("opentype");
+    font-weight: 600
+}
+
+@font-face {
+    font-family: SC;
+    src: url("/assets/fonts/sc_regular.otf") format("opentype");
+    font-weight: 500
+}
+
+body *{
+  font-family: SC
+}
+
+@mixin tx-shadow {
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.28)
+}
+
+p{
+  font-size: 22px
+}
+
+.hero-home{
+  background-image: url('/assets/img/mastering-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 35vh 0;
+  color: #fff;
+  .hero-content-inner{
+    position: relative;
+  }
+  h1{
+    font-weight: 800;
+    font-size: 65px;
+    @include tx-shadow;
+  }
+  p{
+    font-size: 20px;
+    @include tx-shadow;
+  }
+  .btn-primary{
+    border-radius: 50px;
+    background:#333;
+    border-color: #333;
+    font-weight: 800;
+    padding: 10px 40px
+  }
+  position: relative;
+  &:before{
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.57));
+    transition: 0.3s ease all;
+    opacity: 1;
+  }
+}
+
+//Home Blocks
+
+.home-block--1{
+  img{
+    width: 100%;
+    border-radius: 400px;
+    margin-bottom: 2rem;
+    max-width: 200px;
+      @media (max-width: 767.98px) {
+        margin:0 auto;
+        margin-bottom: 2rem;
+        display: block
+    }
+  }
+  background: #fff;
+color: #333;
+position: relative;
+overflow: hidden;
+padding: 4rem 0;
+  .circle--shape{
+    position: absolute;
+    right: -320px;
+    top: -200px;
+    width: 100%;
+    max-width: 1200px;
+    z-index: 0
+  }
+  h5{
+    font-size: 14px;
+    opacity: 0.6
+  }
+  h3{
+    font-weight: 800;
+    margin: 15px 0
+  }
+  p{
+    font-weight: 500;
+    opacity: 0.9
+  }
+  .container{
+    z-index: 2;
+    position: relative;
+  }
+  img{
+    z-index: 2
+  }
+  .btn-primary{
+    border-radius: 50px;
+    background:#2658F5;
+    border-color: #2658F5;
+    font-weight: 800;
+    padding: 10px 40px
+  }
+}
+
+.home-block--2{
+  background: #fff;
+  color: #333;
+  position: relative;
+  overflow: hidden;
+  padding: 4rem 0;
+  .circle--shape{
+    position: absolute;
+    left: -297px;
+    top: -200px;
+    width: 100%;
+    max-width: 1200px;
+    z-index: 0;
+  }
+  h5{
+    font-size: 14px;
+    opacity: 0.6
+  }
+  h3{
+    font-weight: 800;
+    margin: 15px 0
+  }
+  p{
+    font-weight: 500;
+    opacity: 0.9
+  }
+  .container{
+    z-index: 2;
+    position: relative;
+  }
+  img{
+    z-index: 2
+  }
+  .btn-primary{
+    border-radius: 50px;
+    background:#2658F5;
+    border-color: #2658F5;
+    font-weight: 800;
+    padding: 10px 40px
+  }
+}
+
+.home-block--3{
+  background: #191C21;
+  padding: 4rem 0;
+  color: #fff;
+  h3{
+    margin-bottom: 15px;
+    font-weight: 800
+  }
+  h4{
+    font-size: 18px;
+    font-weight: 700
+  }
+  p{
+    opacity: 0.8;
+    margin-bottom: 3rem
+  }
+  .service-card{
+    background: #fff;
+    padding: 2rem 1rem;
+    color: #333;
+    p{
+      margin: 0;
+      margin-bottom: 1rem
+    }
+    .btn-primary{
+      border-radius: 50px;
+      background:#2658F5;
+      border-color: #2658F5;
+      font-weight: 800;
+      padding: 10px 40px
+    }
+  }
+}
+
+.footer-clients{
+  background: #32363E;
+  color: #fff;
+  h5{
+    opacity: 0.5
+  }
+}
+
+.footer-copyright{
+  background: #000;
+  color: #fff;
+  h6{
+    font-weight: 400;
+    font-size: 14px
+  }
+  a{
+    color: #fff;
+    text-decoration: underline;
+  }
+}
+
+.music-buttons{
+  a{
+    color: #fff;
+    text-decoration: underline;
+  }
+  .btn{
+    background: #000;
+    border-color: #000
+  }
+}

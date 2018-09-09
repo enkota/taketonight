@@ -1,0 +1,156 @@
+#form{
+  h3{
+    font-weight: 800
+  }
+}
+/* info (hed, dek, source, credit) */
+.rg-container {
+margin: 0;
+padding: 1em 0.5em;
+
+a{
+  color: #fff;
+  text-decoration: underline;
+}
+}
+.rg-header {
+margin-bottom: 1em;
+
+}
+
+.rg-header > * {
+display: block;
+}
+.rg-hed {
+font-weight: bold;
+
+}
+
+
+.rg-source {
+margin: 0;
+
+
+}
+.rg-source .pre-colon {
+text-transform: uppercase;
+}
+
+.rg-source .post-colon {
+font-weight: bold;
+}
+
+/* table */
+table.rg-table {
+width: 100%;
+margin-bottom: 0.5em;
+
+border-collapse: collapse;
+border-spacing: 0;
+}
+table.rg-table tr {
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+border: 0;
+
+vertical-align: baseline;
+
+
+}
+table.rg-table thead {
+border-bottom: 3px solid #666;
+}
+table.rg-table tr {
+border-bottom: 1px solid #666;
+
+}
+table.rg-table tr.highlight {
+background-color: #111 !important;
+}
+table.rg-table.zebra tr:nth-child(even) {
+background-color: #111;
+}
+table.rg-table th {
+font-weight: bold;
+padding: 0.35em;
+
+}
+table.rg-table td {
+padding: 1rem 0;
+
+}
+table.rg-table .highlight td {
+font-weight: bold;
+}
+table.rg-table th.number,
+td.number {
+
+}
+
+/* media queries */
+@media screen and (max-width: 600px) {
+.rg-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+table.rg-table {
+  width: 100%;
+}
+
+table.rg-table thead {
+  display: none;
+}
+table.rg-table tbody {
+  width: 100%;
+}
+table.rg-table tr,
+table.rg-table th,
+table.rg-table td {
+  display: block;
+  padding: 0;
+}
+table.rg-table tr {
+  border-bottom: none;
+  margin: 0 0 0em 0;
+  padding: 0.5em;
+}
+table.rg-table tr.highlight {
+  background-color: inherit !important;
+}
+table.rg-table.zebra tr:nth-child(even) {
+  background-color: transparent;
+}
+table.rg-table.zebra td:nth-child(even) {
+  background-color: #111;
+}
+table.rg-table tr:nth-child(even) {
+  background-color: transparent;
+}
+table.rg-table td {
+  padding: 0.5em 0 0.25em 0;
+  border-bottom: 1px dotted #ccc;
+
+}
+table.rg-table td[data-title]:before {
+  content: attr(data-title);
+  font-weight: bold;
+  display: inline-block;
+  content: attr(data-title);
+  float: left;
+  margin-right: 0.5em;
+
+}
+table.rg-table td:last-child {
+  padding-right: 0;
+  border-bottom: 2px solid #ccc;
+}
+table.rg-table td:empty {
+  display: none;
+}
+table.rg-table .highlight td {
+  background-color: inherit;
+  font-weight: normal;
+}
+}
